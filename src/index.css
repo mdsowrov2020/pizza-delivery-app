@@ -630,6 +630,7 @@ ol li {
   position: relative;
   display: inline-block;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .cart-icon::after {

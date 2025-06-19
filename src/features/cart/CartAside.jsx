@@ -34,9 +34,7 @@ const CartAside = () => {
         )}
         {cart.length !== 0 && (
           <footer className="cart-footer">
-            <Button to={isNewOrderPage ? "/menu" : "/order/new"}>
-              {isNewOrderPage ? "Go to menu" : "Place order"}
-            </Button>
+            {!isNewOrderPage && <Button to="/order/new">Place order</Button>}
           </footer>
         )}
       </aside>

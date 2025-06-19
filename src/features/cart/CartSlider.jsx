@@ -40,6 +40,26 @@ const CartSlide = () => {
   return createPortal(
     <section className="cart-slider">
       <div className="overlay">
+        <button
+          style={{
+            position: "absolute",
+            right: "320px",
+            zIndex: "1000",
+            height: "30px",
+            width: "30px",
+            borderRadius: "50%",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+
+            color: "white",
+            outline: "none",
+            border: "none",
+            cursor: "pointer",
+          }}
+        >
+          ❌
+        </button>
         <div ref={ref}>
           <CartAside />
         </div>
